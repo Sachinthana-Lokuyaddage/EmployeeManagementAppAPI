@@ -22,5 +22,7 @@ namespace EmployeeManagementApp.Models.Entities
         [Required(ErrorMessage = "Department is required.")]
         [StringLength(50, ErrorMessage = "Department can't be longer than 50 characters.")]
         public string Department { get; set; } = string.Empty; // Department name
+
+        public DateTime HireDate { get; set; } = DateTime.UtcNow; // Default value
     }
 }
